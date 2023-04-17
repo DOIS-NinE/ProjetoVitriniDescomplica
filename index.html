@@ -16,38 +16,41 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg " style="background-color: 	black; " >
-  <div class="container-fluid">
-    <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/membros/logo-removebg-preview.png" alt="" style="height: 50px;right: 92px; margin-left: 10PX;">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color:white;font-weight: 900; font-family: Arial, Helvetica, sans-serif;padding-right: 200PX; ">SNEAKERS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color:white;font-weight: 900; font-family: Arial, Helvetica, sans-serif;padding-right: 200PX">MASCULINO</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;font-weight: 900; font-family: Arial, Helvetica, sans-serif;padding-right: 200PX">
-            MARCAS
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">PUMA</a></li>
-            <li><a class="dropdown-item" href="#">VOKO</a></li>
-            <li><a class="dropdown-item" href="#">LACOSTE</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          
-          <span class="material-icons" style="color: white; margin-top: 5px; cursor: pointer;">shopping_cart</span>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/membros/logo-removebg-preview.png" alt="" style="height: 50px;right: 92px; margin-left: 10PX;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-weight: 900;margin-right: 30vh;">SNEAKERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-weight: 900;margin-right: 30vh">MASCULINO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 900;margin-right: 30vh">
+              MARCAS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">PUMA</a></li>
+              <li><a class="dropdown-item" href="#">VOKO</a></li>
+              <li><a class="dropdown-item" href="#">LACOSTE</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-weight: 900;">
+              <span class="material-icons" style="vertical-align: middle;">shopping_cart</span> 
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <section class="tamanho">
   <div class="size-filters-wrapper">
@@ -144,11 +147,11 @@
 <H2 style="text-align: center;font-family: barlow,sans-serif;;font-weight: 600;">PROMOÇOES DA SEMANA</H2>
 <BR>
 
-<section class="cards" style="cursor: pointer;">
+<section class="cards" >
   <section class="card" >
     <div class="row row-cols-1 row-cols-md-3 g-4" >
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS1.webp" class="card-img-top" alt="...">
           <div class="card-body">
   
@@ -158,18 +161,21 @@
               <li class="star-icon" data-avaliacao="2"></li>
               <li class="star-icon" data-avaliacao="3"></li>
               <li class="star-icon" data-avaliacao="4"></li>
-              <li class="star-icon" data-avaliacao="5"></li>
+              <li class="star-icon2" data-avaliacao="5"></li>
             </ul>
             <b class="frete">FRETE GRÁTIS</b>
             <h6>R$ 279,90</h6>
             <h5 class="avista"> R$ 249,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$270,00 em até 6x</span>
+            <br><br>
+            <button id="btnCompra">comprar</button>
+            
           </div>
 
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS2.webp" class="card-img-top" alt="...">
           <div class="card-body"> 
               <b class="card-text">Tênis Voko Masculino Casual</b>
@@ -184,12 +190,14 @@
               <H6>R$ 249,90</H6>
               <h5 class="avista"> R$ 199,90 no PIX ou Boleto</h5>
               <span class="parcelado">ou R$230,00 em até 6x</span>
+              <br><br>
+            <button id="btnCompra">comprar</button>
           </div>
           
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS3.webp" class="card-img-top" alt="...">
           <div class="card-body">
 
@@ -205,6 +213,8 @@
             <H6> R$ 372,50</H6>
             <h5 class="avista"> R$ 349,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$360,00 em até 6x</span>
+            <br><br>
+            <button id="btnCompra">comprar</button>
           </div>
 
           </div>
@@ -218,7 +228,7 @@
   <section class="card">
     <div class="row row-cols-1 row-cols-md-3 g-4" >
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS7.webp" class="card-img-top" alt="...">
           <div class="card-body">
   
@@ -234,12 +244,14 @@
             <h6>R$ 279,90</h6>
             <h5 class="avista"> R$ 249,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$270,00 em até 6x</span>
+            <br><br>
+            <button id="btnCompra">comprar</button>
           </div>
 
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS6.webp" class="card-img-top" alt="...">
           <div class="card-body"> 
               <b class="card-text">Tênis Masculino Sport Workout</b>
@@ -247,19 +259,21 @@
                 <li class="star-icon ativo" data-avaliacao="1"></li>
                 <li class="star-icon" data-avaliacao="2"></li>
                 <li class="star-icon" data-avaliacao="3"></li>
-                <li class="star-icon" data-avaliacao="4"></li>
-                <li class="star-icon" data-avaliacao="5"></li>
+                <li class="star-icon2" data-avaliacao="4"></li>
+                <li class="star-icon2" data-avaliacao="5"></li>
               </ul>
               <b class="frete">FRETE GRÁTIS</b>
               <H6>R$ 249,90</H6>
               <h5 class="avista"> R$ 199,90 no PIX ou Boleto</h5>
               <span class="parcelado">ou R$230,00 em até 6x</span>
+              <br><br>
+            <button id="btnCompra">comprar</button>
           </div>
           
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS5.webp" class="card-img-top" alt="...">
           <div class="card-body">
 
@@ -275,6 +289,8 @@
             <H6> R$ 372,50</H6>
             <h5 class="avista"> R$ 349,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$360,00 em até 6x</span>
+            <br><br>
+            <button id="btnCompra">comprar</button>
           </div>
 
           </div>
@@ -288,7 +304,7 @@
   <section class="card">
     <div class="row row-cols-1 row-cols-md-3 g-4" >
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS4.webp" class="card-img-top" alt="...">
           <div class="card-body">
   
@@ -304,12 +320,14 @@
             <h6>R$ 279,90</h6>
             <h5 class="avista"> R$ 249,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$270,00 em até 6x</span>
+            <br><br>
+            <button id="btnCompra">comprar</button>
           </div>
 
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS8.webp" class="card-img-top" alt="..." style="height: 315.771; right: 315.771;">
           <div class="card-body"> 
               <b class="card-text">Hugo Boss Verde Militar</b>
@@ -317,19 +335,21 @@
                 <li class="star-icon ativo" data-avaliacao="1"></li>
                 <li class="star-icon" data-avaliacao="2"></li>
                 <li class="star-icon" data-avaliacao="3"></li>
-                <li class="star-icon" data-avaliacao="4"></li>
-                <li class="star-icon" data-avaliacao="5"></li>
+                <li class="star-icon2" data-avaliacao="4"></li>
+                <li class="star-icon2" data-avaliacao="5"></li>
               </ul>
               <b class="frete">FRETE GRÁTIS</b>
               <H6>R$ 249,90</H6>
               <h5 class="avista"> R$ 199,90 no PIX ou Boleto</h5>
               <span class="parcelado">ou R$230,00 em até 6x</span>
+              <br><br>
+            <button id="btnCompra">comprar</button>
           </div>
           
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" id="produto">
           <img src="https://raw.githubusercontent.com/DOIS-NinE/ProjetoVitriniDescomplica/main/IMG/PRODUTOS/TENIS9.webp" class="card-img-top" alt="..." style="height: 315.771; right: 315.771;">
           <div class="card-body">
 
@@ -345,6 +365,8 @@
             <H6> R$ 372,50</H6>
             <h5 class="avista"> R$ 349,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$360,00 em até 6x</span>
+            <br><br>
+            <button id="btnCompra">comprar</button>
           </div>
 
           </div>
