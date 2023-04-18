@@ -576,6 +576,15 @@
 </section>
 
 <script>
+  const btnCompra = document.getElementById("btnCompra");
+  const carrinho = [];
+
+  btnCompra.addEventListener("click", () => {
+    // Adicione um novo item ao carrinho quando o botão de compra for clicado
+    carrinho.push({ nome: "Item adicionado", preco: 10 });
+    console.log(carrinho); // Exibe o carrinho atual no console do navegador para fins de depuração
+  });
+  
  // Captura todos os botões de compra na página
 var buttons = document.querySelectorAll('button[id^="btnCompra-"]');
 

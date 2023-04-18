@@ -20,7 +20,7 @@ a {
     cursor:default
 }
 
-#btnCompra{
+#btnCompra-1,#btnCompra-2,#btnCompra-3,#btnCompra-4,#btnCompra-5,#btnCompra-6,#btnCompra-7,#btnCompra-8,#btnCompra-9{
     background-color: #12C4A5;
     
     color: white;
