@@ -1,45 +1,80 @@
-.card {
-    margin: 20px;
+*{
+    margin:0;
+    padding: 0;
 }
-
-.avaliacao {
+a {
+    color: white;
+}
+.quemSomos{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.card{
+    margin: 20px;
+    display: flex;
+    
+}
+#produto{
+    cursor:default
 }
 
-.star-icon {
+#btnCompra{
+    background-color: #12C4A5;
+    
+    color: white;
+    width: 150px;
+    height:50px ;
+    border: none;
+    border-radius: 10px;
+    position:relative;top:0
+}
+#btnCompra:hover{top:-4px;box-shadow:0 4px 4px #999;
+   transition: all .2s ease-in-out}
+
+
+
+.avaliacao{
+    display: flex;
+   }
+  .star-icon{
     list-style-type: none;
     cursor: pointer;
     color: #d3bf06;
-    font-size: 25px;
-    /* alterar o tamanho das estrelas */
+    font-size: 25px;/* alterar o tamanho das estrelas */
+  }
+  .star-icon2{
+    list-style-type: none;
+    cursor: pointer;
+    color: #636257;
+    font-size: 25px;/* alterar o tamanho das estrelas */
 }
-
-.star-icon::before {
+  .star-icon::before{
     content: "\2605";
+  }
+.star-icon2::before{
+  content: "\2605";
 }
-
-.item {
+.item{
     cursor: pointer;
 }
 
-.frete {
+.frete{
     color: black;
 }
-
-H6 {
+H6{
     text-decoration: line-through;
     color: #a8a7a4;
 }
-
-section {
+section{
     border-style: none;
 }
-
-.avista {
+.avista{
     color: black;
 }
 
-.parcelado {
+.parcelado{
     font-weight: bold;
 }
 
