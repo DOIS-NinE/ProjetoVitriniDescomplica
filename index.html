@@ -168,7 +168,7 @@
             <h5 class="avista"> R$ 249,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$270,00 em até 6x</span>
             <br><br>
-            <button id="btnCompra">comprar</button>
+            <button type="button" class="btn btn-primary" id="btnCompra-1" data-item-name="Tênis Masculino PUMA™ BMW">Comprar</button>
             
           </div>
 
@@ -191,7 +191,7 @@
               <h5 class="avista"> R$ 199,90 no PIX ou Boleto</h5>
               <span class="parcelado">ou R$230,00 em até 6x</span>
               <br><br>
-            <button id="btnCompra">comprar</button>
+              <button type="button" class="btn btn-primary" id="btnCompra-2" data-item-name="Tênis Voko Masculino Casual">Comprar</button>
           </div>
           
         </div>
@@ -214,7 +214,7 @@
             <h5 class="avista"> R$ 349,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$360,00 em até 6x</span>
             <br><br>
-            <button id="btnCompra">comprar</button>
+            <button type="button" class="btn btn-primary" id="btnCompra-3" data-item-name="Tênis Astronaut Trainer Race">Comprar</button>
           </div>
 
           </div>
@@ -245,7 +245,7 @@
             <h5 class="avista"> R$ 249,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$270,00 em até 6x</span>
             <br><br>
-            <button id="btnCompra">comprar</button>
+            <button type="button" class="btn btn-primary" id="btnCompra-4" data-item-name="NoEnName_Null Sólida">Comprar</button>
           </div>
 
         </div>
@@ -267,7 +267,7 @@
               <h5 class="avista"> R$ 199,90 no PIX ou Boleto</h5>
               <span class="parcelado">ou R$230,00 em até 6x</span>
               <br><br>
-            <button id="btnCompra">comprar</button>
+              <button type="button" class="btn btn-primary" id="btnCompra-5" data-item-name="Tênis Masculino Sport Workout">Comprar</button>
           </div>
           
         </div>
@@ -290,7 +290,7 @@
             <h5 class="avista"> R$ 349,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$360,00 em até 6x</span>
             <br><br>
-            <button id="btnCompra">comprar</button>
+            <button type="button" class="btn btn-primary" id="btnCompra-6" data-item-name="TÊNIS MASCULINO SPORT LCT">Comprar</button>
           </div>
 
           </div>
@@ -321,7 +321,7 @@
             <h5 class="avista"> R$ 249,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$270,00 em até 6x</span>
             <br><br>
-            <button id="btnCompra">comprar</button>
+            <button type="button" class="btn btn-primary" id="btnCompra-7" data-item-name="Tênis Voko Masculino Casual">Comprar</button>
           </div>
 
         </div>
@@ -343,7 +343,7 @@
               <h5 class="avista"> R$ 199,90 no PIX ou Boleto</h5>
               <span class="parcelado">ou R$230,00 em até 6x</span>
               <br><br>
-            <button id="btnCompra">comprar</button>
+              <button type="button" class="btn btn-primary" id="btnCompra-8" data-item-name="Hugo Boss Verde Militar">Comprar</button>
           </div>
           
         </div>
@@ -366,7 +366,7 @@
             <h5 class="avista"> R$ 349,90 no PIX ou Boleto</h5>
             <span class="parcelado">ou R$360,00 em até 6x</span>
             <br><br>
-            <button id="btnCompra">comprar</button>
+            <button type="button" class="btn btn-primary" id="btnCompra-9" data-item-name="Vulcanizer SuperStar">Comprar</button>
           </div>
 
           </div>
@@ -576,14 +576,29 @@
 </section>
 
 <script>
-  const btnCompra = document.getElementById("btnCompra");
-  const carrinho = [];
+ // Captura todos os botões de compra na página
+var buttons = document.querySelectorAll('button[id^="btnCompra-"]');
 
-  btnCompra.addEventListener("click", () => {
-    // Adicione um novo item ao carrinho quando o botão de compra for clicado
-    carrinho.push({ nome: "Item adicionado", preco: 10 });
-    console.log(carrinho); // Exibe o carrinho atual no console do navegador para fins de depuração
+// Adiciona um manipulador de eventos de clique a cada botão
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Obtém o nome do item do atributo de dados do botão
+    var itemName = button.getAttribute('data-item-name');
+    
+    // Adiciona o item ao carrinho
+    addToCart(itemName);
   });
+});
+
+// Função para adicionar um item ao carrinho
+function addToCart(itemName) {
+  // Adiciona o nome do item a uma lista de itens no carrinho
+  // (substitua isso pelo seu código real de carrinho)
+  var cart = document.querySelector('#cart');
+  var listItem = document.createElement('li');
+  listItem.innerText = itemName;
+  cart.appendChild(listItem);
+}
 </script>
 
 
